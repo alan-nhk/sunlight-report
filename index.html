@@ -21,6 +21,19 @@
   }
   .wrap{max-width:1060px;margin:0 auto;padding:0 18px 64px}
 
+  .nav{background:#1b1f27;color:#fff}
+  .nav-in{max-width:1060px;margin:0 auto;padding:0 18px;display:flex;align-items:center;gap:6px;height:44px;flex-wrap:wrap}
+  .nav a{color:#c3c9d4;text-decoration:none;font-size:13px;padding:5px 12px;border-radius:7px;border:1px solid transparent}
+  .nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+  .nav a.on{color:#fff;background:rgba(179,18,63,.55);border-color:rgba(179,18,63,.9);font-weight:650}
+  .nav a.lk{color:#f0c96a;border-color:rgba(201,162,74,.45)}
+  .nav .sp{flex:1}
+  .nav .who{color:#8b93a1;font-size:12px}
+  .nextlink{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+  .nextlink b{color:var(--brand);font-size:14.5px}
+  .nextlink span{display:block;color:var(--ink3);font-size:12.5px;margin-top:3px}
+  .nextlink:hover{border-color:#e7c3ce}
+
   header{background:linear-gradient(135deg,#1b1f27 0%,#2c333f 55%,#3d2b33 100%);color:#fff;padding:34px 18px 30px;margin-bottom:26px}
   .head-in{max-width:1060px;margin:0 auto}
   .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#c9a24a;font-weight:700}
@@ -115,10 +128,21 @@
     .scrollhint{display:block}
     .prog{padding:14px 12px 12px}
     .pstat .v{font-size:15px}
+    .nav-in{padding:0 12px;gap:4px}
+    .nav .who{display:none}
   }
 </style>
 </head>
 <body>
+
+<div class="nav">
+  <div class="nav-in">
+    <a href="index.html" class="on">2026 年度報告</a>
+    <a href="report.html" class="lk">三年對比 2022–2026</a>
+    <span class="sp"></span>
+    <span class="who">SUC SUNLIGHT (V9)　·　20021</span>
+  </div>
+</div>
 
 <header>
   <div class="head-in">
@@ -179,6 +203,13 @@
         <div class="n">相當於年目標的 61.5%</div>
       </div>
     </div>
+  </section>
+
+  <section>
+    <a class="nextlink" href="report.html">
+      <b>→ 三年業績對比（2022–2025 ＋ 2026 YTD）</b>
+      <span>年結快照對比 · 純新做 vs Top-up 結構 · 個案量與單價 · 逐位組員五年軌跡 · 持續率年結</span>
+    </a>
   </section>
 
   <section>

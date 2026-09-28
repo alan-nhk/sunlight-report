@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>SUNLIGHT 組別 · 三年業績對比 2022–2026 · FYC</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --ink:#1b1f27; --ink2:#525a68; --ink3:#8b93a1;
+    --line:#e3e6ec; --up:#0e7c66; --down:#c0392b; --neutral:#7a8290;
+    --brand:#B3123F; --accent:#2f5d8a; --gold:#b8860b; --track:#e8ebf0;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 4px 16px rgba(16,24,40,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang HK","PingFang TC","Microsoft JhengHei","Noto Sans TC",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.6; font-size:15px;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 18px 64px}
+
+  .nav{background:#1b1f27;color:#fff}
+  .nav-in{max-width:1060px;margin:0 auto;padding:0 18px;display:flex;align-items:center;gap:6px;height:44px;flex-wrap:wrap}
+  .nav a{color:#c3c9d4;text-decoration:none;font-size:13px;padding:5px 12px;border-radius:7px;border:1px solid transparent}
+  .nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+  .nav a.on{color:#fff;background:rgba(179,18,63,.55);border-color:rgba(179,18,63,.9);font-weight:650}
+  .nav .sp{flex:1}
+  .nav .who{color:#8b93a1;font-size:12px}
+
+  header{background:linear-gradient(135deg,#1b1f27 0%,#2c333f 55%,#3d2b33 100%);color:#fff;padding:32px 18px 28px;margin-bottom:26px}
+  .head-in{max-width:1060px;margin:0 auto}
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#c9a24a;font-weight:700}
+  h1{margin:8px 0 6px;font-size:29px;line-height:1.25;letter-spacing:.01em}
+  .sub{color:#c3c9d4;font-size:14px}
+  .meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+  .pill{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px;font-size:12.5px;color:#e8ebf1}
+  .pill.warn{background:rgba(214,138,10,.16);border-color:rgba(214,138,10,.45);color:#f0c96a}
+  .pill.hot{background:rgba(192,57,43,.20);border-color:rgba(192,57,43,.55);color:#ffb4a8}
+
+  section{margin:0 0 34px}
+  h2{font-size:19px;margin:0 0 4px;letter-spacing:.01em;display:flex;align-items:center;gap:9px}
+  h2::before{content:"";width:4px;height:19px;border-radius:2px;background:var(--brand);display:inline-block}
+  .h2sub{color:var(--ink3);font-size:13px;margin:0 0 14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .kpi{padding:16px 16px 14px}
+  .kpi.hero{background:linear-gradient(160deg,#fff 0%,#fdf6f8 100%);border-color:#f0d9e0}
+  .kpi .k{font-size:12.5px;color:var(--ink3);letter-spacing:.02em}
+  .kpi .v{font-size:25px;font-weight:750;letter-spacing:-.01em;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+  .kpi .v small{font-size:13px;font-weight:600;color:var(--ink3);margin-left:3px}
+  .kpi .d{font-size:13px;font-weight:650;font-variant-numeric:tabular-nums}
+  .kpi .n{font-size:12px;color:var(--ink3);margin-top:2px}
+  .up{color:var(--up)} .down{color:var(--down)} .neu{color:var(--neutral)}
+
+  .prog{padding:18px 18px 16px}
+  .ptrack{position:relative;height:34px;background:var(--track);border-radius:8px;margin:30px 0 6px}
+  .pfill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#B3123F,#d94a6e);border-radius:8px 0 0 8px;overflow:hidden}
+  .pmid{position:absolute;top:-6px;bottom:-6px;width:2px;background:#1b1f27}
+  .pmidlab{position:absolute;top:-24px;font-size:11.5px;font-weight:700;color:#1b1f27;transform:translateX(-50%);white-space:nowrap}
+  .pfilllab{position:absolute;left:0;top:0;bottom:0;display:flex;align-items:center;padding-left:12px;color:#fff;font-weight:750;font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .plab{display:flex;justify-content:space-between;font-size:12px;color:var(--ink3);margin-top:6px}
+  .pstats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+  .pstat{background:#fafbfc;border:1px solid var(--line);border-radius:9px;padding:10px 12px}
+  .pstat .k{font-size:11.5px;color:var(--ink3)}
+  .pstat .v{font-size:17px;font-weight:730;font-variant-numeric:tabular-nums;margin-top:2px}
+
+  .chart{padding:16px 14px 10px}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink2);padding:0 4px 10px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .axis{stroke:var(--line);stroke-width:1}
+  .gl{stroke:var(--line);stroke-width:1;stroke-dasharray:3 4}
+  .tick{fill:var(--ink3);font-size:11px}
+  .barlab{fill:var(--ink2);font-size:11px;font-variant-numeric:tabular-nums}
+  .rowlab{fill:var(--ink);font-size:12.5px}
+  .rowlab2{fill:var(--ink3);font-size:11px}
+  .dash{stroke-dasharray:6 5}
+
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:660px;font-size:13.5px}
+  th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  thead th{background:#fafbfc;color:var(--ink2);font-weight:650;font-size:12.5px;position:sticky;top:0}
+  tbody tr:hover{background:#fafbfc}
+  tbody tr.tot{background:#f7f8fa;font-weight:700}
+  tbody tr.sub td:first-child{padding-left:24px;color:var(--ink2)}
+  td.num{font-variant-numeric:tabular-nums}
+  .tag{display:inline-block;padding:1px 7px;border-radius:5px;font-size:11.5px;font-weight:650}
+  .tag.g{background:#e6f4ef;color:#0b6b57}
+  .tag.r{background:#fdecea;color:#a5301f}
+  .tag.b{background:#eef2f7;color:#2f5d8a}
+  .tag.y{background:#fdf3e3;color:#8a6100}
+  .tag.n{background:#f1f2f5;color:#5c6472}
+  .hint{font-size:12px;color:var(--ink3);padding:8px 12px 12px}
+  .scrollhint{display:none;font-size:11.5px;color:var(--ink3);padding:0 2px 6px}
+
+  .prose{padding:16px 18px}
+  .prose ol,.prose ul{margin:0;padding-left:20px}
+  .prose li{margin:7px 0}
+  .callout{border-left:3px solid var(--brand);background:#fff;padding:12px 15px;border-radius:0 10px 10px 0;margin:0 0 12px}
+  .callout.good{border-left-color:var(--up)}
+  .callout.warn{border-left-color:#d68910}
+  .callout:last-child{margin-bottom:0}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card.mini{padding:14px 16px}
+  .card.mini .k{font-size:12.5px;color:var(--ink3)}
+  .card.mini .v{font-size:22px;font-weight:740;font-variant-numeric:tabular-nums;margin:3px 0 1px}
+
+  footer{border-top:1px solid var(--line);margin-top:8px;padding:18px 0 0;color:var(--ink3);font-size:12.5px}
+  .badge-internal{display:inline-block;background:#fdecea;color:#a5301f;border:1px solid #f6cfc9;border-radius:7px;padding:4px 10px;font-size:12px;font-weight:700;letter-spacing:.02em}
+  .nextlink{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+  .nextlink b{color:var(--brand);font-size:14.5px}
+  .nextlink span{display:block;color:var(--ink3);font-size:12.5px;margin-top:3px}
+  .nextlink:hover{border-color:#e7c3ce}
+
+  @media (max-width:860px){
+    .kpis{grid-template-columns:repeat(2,1fr)}
+    .pstats{grid-template-columns:repeat(2,1fr)}
+    .two{grid-template-columns:1fr}
+    h1{font-size:23px}
+  }
+  @media (max-width:520px){
+    body{font-size:14.5px}
+    .kpis{grid-template-columns:1fr 1fr;gap:9px}
+    .kpi{padding:13px 12px 11px}
+    .kpi .v{font-size:20px}
+    .wrap{padding:0 12px 48px}
+    header{padding:24px 12px 20px}
+    h1{font-size:20px}
+    table{font-size:12.5px}
+    th,td{padding:8px 9px}
+    .scrollhint{display:block}
+    .prog{padding:14px 12px 12px}
+    .pstat .v{font-size:15px}
+    .nav-in{padding:0 12px;gap:4px}
+    .nav .who{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-in">
+    <a href="index.html">2026 年度報告</a>
+    <a href="report.html" class="on">三年對比 2022–2026</a>
+    <span class="sp"></span>
+    <span class="who">SUC SUNLIGHT (V9)　·　20021</span>
+  </div>
+</div>
+
+<header>
+  <div class="head-in">
+    <div class="eyebrow">Three-Year Trend · FYC Based</div>
+    <h1>三年業績對比　2022 – 2025（＋2026 YTD）</h1>
+    <div class="sub">SUC SUNLIGHT (V9)　·　組別代號 20021　·　主管 B4226　·　幣別 HKD</div>
+    <div class="meta">
+      <span class="pill">快照點　每年 12 月 31 日年結</span>
+      <span class="pill">2026 YTD　截至 09-27</span>
+      <span class="pill">主指標　FYC</span>
+      <span class="pill hot">年度目標　1,380,000</span>
+      <span class="pill warn">內部資料</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>一句總結</h2>
+    <div class="card prose">
+      <div class="callout warn" style="font-size:14.5px">
+        <b>2023 沖高 → 2024 塌 → 2025 表面返晒身，但升幅並非來自新客。</b><br>
+        2024→2025 FYC 升 <b>273,543</b>，其中 <b>287,408（105%）</b>全部來自「Top-up ＋ 整付保費」一項；
+        同期<b>純新做壽險只升 2.9%</b>，而<b>個案數反而跌 7.4%</b>。
+        同一時間，<b>續保／服務壽險 FYC 由 2022 的 117,604 塌到 2025 的 21,831</b>（−81%）。
+      </div>
+      <div class="callout good">
+        <b>要留意：這不是「客走」問題。</b>持續率一路健康（P12m 96.9–99.2%）。
+        跌的是<b>新業務量</b>，不是續保質素 —— 診斷方向唔好搞錯。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>FYC 核心數字</h2>
+    <p class="h2sub">年結全年 FYC（2022–2025）· 2026 為 1–9 月累計</p>
+    <div class="kpis">
+      <div class="card kpi hero">
+        <div class="k">2025 全年 FYC</div>
+        <div class="v">1,269,588<small>HKD</small></div>
+        <div class="d up">▲ 27.46%　vs 2024</div>
+        <div class="n">但仍低於 2023 高位 1,301,529</div>
+      </div>
+      <div class="card kpi hero">
+        <div class="k">2023–2025 三年合計</div>
+        <div class="v">3,567,162<small>HKD</small></div>
+        <div class="d neu">年均 1,189,054</div>
+        <div class="n">2022 為 1,091,308（參考）</div>
+      </div>
+      <div class="card kpi">
+        <div class="k">2026 YTD（1–9 月）</div>
+        <div class="v">657,944<small>HKD</small></div>
+        <div class="d down">▼ 37.63%　vs 2025 同期</div>
+        <div class="n">同期 1,055,006</div>
+      </div>
+      <div class="card kpi">
+        <div class="k">已交付個案（2025）</div>
+        <div class="v">138<small>宗</small></div>
+        <div class="d down">▼ 30.3%　vs 2022（201）</div>
+        <div class="n">201 → 197 → 149 → 138 → 95</div>
+      </div>
+      <div class="card kpi">
+        <div class="k">平均每宗 FYC（2025）</div>
+        <div class="v">9,200<small>HKD</small></div>
+        <div class="d up">▲ 37.6%　vs 2024</div>
+        <div class="n">2022 為 5,429　·　升幅靠大額單</div>
+      </div>
+      <div class="card kpi">
+        <div class="k">續保／服務壽險 FYC（2025）</div>
+        <div class="v">21,831<small>HKD</small></div>
+        <div class="d down">▼ 81.4%　vs 2022</div>
+        <div class="n">117,604 → 103,500 → 52,033 → 21,831</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>組別年度總覽</h2>
+    <p class="h2sub">年結快照 · 2026 為 1–9 月（未足年，不可與全年直接比較）</p>
+    <div class="card chart">
+      <div class="legend">
+        <span><i style="background:#B3123F"></i>全年 FYC</span>
+        <span><i style="background:#0e7c66"></i>2023 三年高位</span>
+        <span><i style="background:#9db4cc"></i>2026 未足年</span>
+      </div>
+      <div id="c-year"></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="tblwrap"><table id="t-year"></table></div>
+      <div class="scrollhint">← 可左右滑動查看完整表格</div>
+      <div class="hint" id="yearhint"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2025 的「復甦」係真定假？</h2>
+    <p class="h2sub">純新做壽險 vs Top-up＋整付保費 —— 兩條線走向完全相反</p>
+    <div class="card chart">
+      <div class="legend">
+        <span><i style="background:#2f5d8a"></i>純新做壽險 FYC</span>
+        <span><i style="background:#b8860b"></i>Top-up ＋ 整付保費 FYC</span>
+        <span><i style="background:#0e7c66"></i>續保／服務壽險 FYC</span>
+        <span style="color:var(--ink3)">2026 為 1–9 月</span>
+      </div>
+      <div id="c-mix"></div>
+      <div class="hint">
+        2024→2025：純新做壽險 +20,898（+2.9%），Top-up＋整付 +287,408（+168.9%）。
+        換言之，組別 FYC 那 273,543 的升幅，<b>全靠 Top-up 一項撐起，而且超額覆蓋</b>。
+      </div>
+    </div>
+    <div class="two" style="margin-top:12px">
+      <div class="card mini">
+        <div class="k">2025 升幅中來自 Top-up 的比重</div>
+        <div class="v down">105%</div>
+        <div class="n" style="color:var(--ink3);font-size:12px">287,408 ÷ 273,543</div>
+      </div>
+      <div class="card mini">
+        <div class="k">同期個案數變化</div>
+        <div class="v down">149 → 138（−7.4%）</div>
+        <div class="n" style="color:var(--ink3);font-size:12px">單價升、單數跌</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>FYC 組成（可加總口徑）</h2>
+    <p class="h2sub">AIA AMS：FYC 總額 = 壽險＋PA (a) ＋ 團體 (b) ＋ 年金 (c)</p>
+    <div class="card">
+      <div class="tblwrap"><table id="t-comp"></table></div>
+      <div class="hint">
+        ⚠️ <b>A&amp;H（健康險及附加契約）為 AMS 另列項，不計入 FYC 總額</b>，故單獨列出作參考，不參與加總。
+        「續保／服務壽險」= 純壽險 − 純新做壽險。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>個案量與單價</h2>
+    <p class="h2sub">柱＝已交付個案數　·　線＝平均每宗 FYC</p>
+    <div class="card chart">
+      <div class="legend">
+        <span><i style="background:#2f5d8a"></i>已交付個案（宗）</span>
+        <span><i style="background:#B3123F"></i>平均每宗 FYC</span>
+      </div>
+      <div id="c-cases"></div>
+      <div class="hint">
+        個案量單邊下滑（201 → 197 → 149 → 138 → 95），單價卻由 5,429 升到 9,200。
+        2026 前 9 個月單價回落至 6,926，即<b>「大額單」的支撐同時消失</b>。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>逐位組員 FYC（五年）</h2>
+    <p class="h2sub">各人每年 FYC 及佔組別比重</p>
+    <div class="card chart">
+      <div class="legend">
+        <span><i style="background:#d9dde4"></i>2022</span>
+        <span><i style="background:#c3ccd8"></i>2023</span>
+        <span><i style="background:#9db4cc"></i>2024</span>
+        <span><i style="background:#2f5d8a"></i>2025</span>
+        <span><i style="background:#B3123F"></i>2026 YTD</span>
+      </div>
+      <div id="c-agents"></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="tblwrap"><table id="t-agents"></table></div>
+      <div class="scrollhint">← 可左右滑動查看完整表格</div>
+    </div>
+    <div class="card prose" style="margin-top:12px">
+      <div class="callout warn">
+        <b>單點風險：D8191 一人佔 2025 全組 58.5%</b><br>
+        D8191 2025 年做 743,158，等於其餘四位總和（526,430）的 1.41 倍。
+        佢 2026 YTD 回落至 250,694；以同期計（2025 首 9 月為 650,125）跌幅 <b>−399,431</b>，
+        已<u>單靠一人</u>超過全組 2026 同期的總缺口（397,062）。
+      </div>
+      <div class="callout good">
+        <b>唯一逆勢：主管 B4226</b><br>
+        2026 YTD 222,460，同期 <b>+71.01%</b>，佔比由 15.5% 升到 <b>33.8%</b>。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>持續率（年結）</h2>
+    <p class="h2sub">CM＝當月持續率　·　P12m＝12 個月滾動持續率</p>
+    <div class="card">
+      <div class="tblwrap"><table id="t-pers"></table></div>
+      <div class="hint">J5700 於 2023–2025 年結未出現在名單（該段期間無生產），故無持續率。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2026 目標進度</h2>
+    <p class="h2sub">年度目標 FYC 1,380,000　·　快照 2026-09-27</p>
+    <div class="card prog">
+      <div class="ptrack">
+        <div class="pfill" style="width:47.68%"><div class="pfilllab">已達 47.7%</div></div>
+        <div class="pmid" style="left:74%"><div class="pmidlab">時間進度 74%</div></div>
+      </div>
+      <div class="plab"><span>0</span><span>目標 1,380,000</span></div>
+      <div class="pstats">
+        <div class="pstat"><div class="k">已達成</div><div class="v">657,944</div></div>
+        <div class="pstat"><div class="k">尚欠</div><div class="v down">722,056</div></div>
+        <div class="pstat"><div class="k">2025 年 Q4 實際</div><div class="v">214,582</div></div>
+        <div class="pstat"><div class="k">Q4 需要倍數</div><div class="v down">3.4 倍</div></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="tblwrap"><table id="t-goal"></table></div>
+      <div class="hint">「2025 季節形狀」＝ 以 2025 年 1–9 月佔全年 83.1% 的比例推算。</div>
+    </div>
+    <div class="card prose" style="margin-top:12px">
+      <div class="callout warn">
+        <b>對比三年基準，目標偏高：</b>1,380,000 相當於 2025 全年（1,269,588）的 <b>108.7%</b>，
+        亦比 2022–2025 四年最高的 2023（1,301,529）高出 <b>6.0%</b>。
+        以現時 YTD 進度推算全年約 <b>790k–890k</b>（57%–65%）。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>五個診斷</h2>
+    <p class="h2sub">以 FYC 口徑推導 · 全部可回溯到上表數字</p>
+    <div class="card prose">
+      <div class="callout warn">
+        <b>1. 2025 的成長不是新業務成長</b><br>
+        升幅 105% 來自 Top-up＋整付，純新做壽險只升 2.9%，個案數跌 7.4%。
+        把 Top-up 那 287,408 拿走，2025 實質是<b>橫行</b>（744,817 vs 723,919）。
+      </div>
+      <div class="callout warn">
+        <b>2. 個案引擎持續失速</b><br>
+        已交付個案 201 → 197 → 149 → 138，三年少 31.3%。2026 前 9 月只有 95 宗，按比例全年約 127 宗。
+      </div>
+      <div class="callout warn">
+        <b>3. 續保／服務壽險 FYC 塌陷</b><br>
+        117,604 → 103,500 → 52,033 → 21,831（−81.4%）。<b>但持續率健康（P12m 98.31%）</b>，
+        兩者矛盾 → 值得先查清楚係佣金基數變化、產品結構轉向，抑或續保佣金計法不同，不要當成客走。
+      </div>
+      <div class="callout warn">
+        <b>4. 單點依賴極高</b><br>
+        D8191 2025 佔 58.5%。組別 FYC 的波幅，實質等於 D8191 一人的波幅（394,311 → 743,158 → 250,694）。
+      </div>
+      <div class="callout good">
+        <b>5. 品質面一直穩健 —— 這是好消息</b><br>
+        持續率 2023–2025 年結 P12m 96.89% / 99.21% / 98.31%，冇一年低於 96%。
+        問題純粹在<b>產能與新業務量</b>，唔係客群質素。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>數據來源、驗收與限制</h2>
+    <div class="card prose">
+      <ol>
+        <li>資料來自 AIA <b>營業員代表管理系統（AMS）</b> KRA Summary，以歷史 as-of 日期（<b>12/31/YYYY</b>）查詢年結快照，
+            每一年的 <code>YTD</code> 即該年全年、<code>LYTD</code> 即前一年全年。抽數日：2026-09-28。</li>
+        <li><b>主指標為 FYC（首年佣金）</b>；AMS 口徑：FYC 總額 = 壽險＋PA (a) ＋ 團體 (b) ＋ 年金 (c)。</li>
+        <li><b>A&amp;H（健康險及附加契約）為另列項，不計入 FYC 總額</b>，本頁單獨列出，不參與加總。</li>
+        <li><b>2026 為 1–9 月累計（截至 09-27）</b>，未足年，所有 2026 數字不可與全年直接比較；負增長百分比皆為<b>同期比較</b>。</li>
+        <li>持續率報表（AMS Persistency）<b>只接受 month / year 參數，不跟 date</b>，故逐個年結分開查（12 月）。</li>
+        <li>年度目標 <b>1,380,000</b> 由用戶提供。</li>
+        <li>為 AMS 系統口徑（已勾選 Critical Policies），與公司正式財務報表可能存在時差。</li>
+      </ol>
+      <div style="border-top:1px solid var(--line);margin:14px -18px 12px"></div>
+      <b style="font-size:13.5px">驗收紀錄</b>
+      <ul style="margin-top:8px">
+        <li>加總驗算：Life &amp; PA (a) ＋ Group (b) ＋ Pension (c) ＝ FYC 總額，<b>五年全部對得上</b>（2025 差 1 元，屬四捨五入）。</li>
+        <li>鏈式對數：2023 <code>YTD</code> 1,301,529 ＝ 2024 <code>LYTD</code> ✓；2024 <code>YTD</code> 996,045 ＝ 2025 <code>LYTD</code> ✓。</li>
+        <li>逐位組員 FYC 合計 vs 組別總額：2023 差 285、2024 差 1、2025 差 0、2026 差 36（Pension 分項歸屬差異，≤0.02%）。</li>
+        <li>個案數（已交付）逐年逐人合計：201 / 197 / 149 / 138 / 95，<b>完全一致</b>。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>返回</h2>
+    <a class="nextlink" href="index.html">
+      <b>→ 2026 年度報告（FYC 主導）</b>
+      <span>本年累計、月度節奏、逐位組員、業務線分項、品質指標、建議行動</span>
+    </a>
+  </section>
+
+  <footer>
+    <span class="badge-internal">內部資料</span>
+    <p style="margin:10px 0 0">資料擷取：2026-09-28　·　來源：AMS KRA Summary（Agency 20021）　·　快照點：每年 12 月年結　·　主指標：FYC</p>
+  </footer>
+</div>
+
+<script>
+var YEARS = ['2022','2023','2024','2025','2026'];
+var YLBL  = {'2022':'2022','2023':'2023','2024':'2024','2025':'2025','2026':'2026 YTD'};
+var TARGET = 1380000;
+
+var AGG = {
+  '2022':{fyc:1091308, fyp:3378907, pureLife:859220, newLife:741616, topup:171778,
+          lifeTot:1030997, pa:43346, ah:441382, paTot:1074343, grp:597, pen:16368,
+          sub:251, deliv:201, dec:-4, per:5429, newLifeFyp:3028322, lifeFyp:3260875, singleFyp:4664774},
+  '2023':{fyc:1301529, fyp:4097774, pureLife:1174340, newLife:1070840, topup:80700,
+          lifeTot:1255040, pa:20772, ah:341598, paTot:1275812, grp:4655, pen:21062,
+          sub:247, deliv:197, dec:-4, per:6607, newLifeFyp:3698972, lifeFyp:4012233, singleFyp:1999802},
+  '2024':{fyc:996045, fyp:3629801, pureLife:775952, newLife:723919, topup:170189,
+          lifeTot:946141, pa:15113, ah:242298, paTot:961254, grp:3096, pen:31695,
+          sub:177, deliv:149, dec:-5, per:6685, newLifeFyp:3449323, lifeFyp:3568164, singleFyp:6119413},
+  '2025':{fyc:1269588, fyp:5097891, pureLife:766648, newLife:744817, topup:457597,
+          lifeTot:1224244, pa:23743, ah:214179, paTot:1247987, grp:2638, pen:18962,
+          sub:159, deliv:138, dec:-5, per:9200, newLifeFyp:4934126, lifeFyp:5009964, singleFyp:15357265},
+  '2026':{fyc:657944, fyp:2657422, pureLife:333300, newLife:326674, topup:308451,
+          lifeTot:641751, pa:4228, ah:90708, paTot:645979, grp:699, pen:11266,
+          sub:113, deliv:95, dec:0, per:6926, newLifeFyp:2608734, lifeFyp:2642342, singleFyp:9876458}
+};
+var LY_SAME = 1055006;   // 2025 1-9 月
+var LY_CASES_SAME = 104;
+
+var AGENTS = [
+  {code:'B4226', name:'NG HIU KWAN（主管）', v:{'2022':179184,'2023':377557,'2024':242013,'2025':196621,'2026':222460}},
+  {code:'D8191', name:'SZE PING PING',      v:{'2022':553927,'2023':598386,'2024':394311,'2025':743158,'2026':250694}},
+  {code:'G4709', name:'CHAN LAI CHAU',      v:{'2022':108100,'2023':207433,'2024':216807,'2025':200469,'2026':89368}},
+  {code:'G5047', name:'NG SIU SING',        v:{'2022':250185,'2023':118438,'2024':142913,'2025':129340,'2026':84858}},
+  {code:'J5700', name:'WANG YINJUAN',       v:{'2022':0,'2023':0,'2024':0,'2025':0,'2026':10600}}
+];
+
+var PERS = {
+  '2023':{'B4226':[100.00,100.00], 'D8191':[96.13,96.84], 'G4709':[54.68,86.87], 'G5047':[100.00,100.00], 'J5700':null, 'Total':[91.58,96.89]},
+  '2024':{'B4226':[100.00,100.00], 'D8191':[93.52,99.15], 'G4709':[96.51,97.77], 'G5047':[100.00,100.00], 'J5700':null, 'Total':[96.11,99.21]},
+  '2025':{'B4226':[100.00,99.12],  'D8191':[81.82,99.11], 'G4709':[92.76,95.44], 'G5047':[100.00,99.60], 'J5700':null, 'Total':[91.67,98.31]}
+};
+
+var GOAL = [
+  ['2026 年度 FYC 目標', 1380000, ''],
+  ['2026 YTD（截至 09-27）', 657944, ''],
+  ['達成率', '47.7%', 'down'],
+  ['距離目標尚欠', 722056, 'down'],
+  ['2025 同期（1–9 月）', 1055006, ''],
+  ['2026 同期 vs 2025 同期', '62.4%（−37.6%）', 'down'],
+  ['2025 全年', 1269588, ''],
+  ['目標相當於 2025 全年', '108.7%', 'down'],
+  ['直線推算全年', 889474, ''],
+  ['按 2025 季節形狀推算全年', 791654, ''],
+  ['2026 Q4 需完成才達標', 722056, 'down'],
+  ['Q4 需要量 vs 2025 同期', '3.4 倍', 'down']
+];
+
+var NF = new Intl.NumberFormat('en-US');
+function fmt(n){ if(n===null||n===undefined||n==='') return '—'; return NF.format(Math.round(n)); }
+function pct(v,d){ return (d==null?(v>0?'+':''):'')+v.toFixed(2)+'%'; }
+function yoy(cur,prev){ if(prev===0||prev==null) return null; return (cur-prev)/prev*100; }
+function arrow(v){ return v>0?'▲ ':(v<0?'▼ ':''); }
+function el(id){ return document.getElementById(id); }
+function svg(w,h){ var s=document.createElementNS('http://www.w3.org/2000/svg','svg'); s.setAttribute('viewBox','0 0 '+w+' '+h); s.setAttribute('preserveAspectRatio','xMidYMid meet'); return s; }
+function nd(t,a,x){ var e=document.createElementNS('http://www.w3.org/2000/svg',t); for(var k in a){e.setAttribute(k,a[k]);} if(x!==undefined)e.textContent=x; return e; }
+function narrow(){ return window.innerWidth < 620; }
+function niceTop(v,step){ return Math.ceil(v/step)*step; }
+
+/* ---- 年度 FYC 柱狀 ---- */
+function drawYear(){
+  var box=el('c-year'); box.innerHTML='';
+  var nar=narrow(), W=nar?430:900, H=nar?290:320, PL=nar?46:64, PR=nar?14:18, PT=18, PB=nar?40:44;
+  var pw=W-PL-PR, ph=H-PT-PB;
+  var vals=YEARS.map(function(y){return AGG[y].fyc;});
+  var top=niceTop(Math.max.apply(null,vals),500000);
+  var s=svg(W,H);
+  for(var i=0;i<=4;i++){
+    var y=PT+ph-ph*i/4;
+    s.appendChild(nd('line',{x1:PL,y1:y,x2:W-PR,y2:y,'class':i===0?'axis':'gl'}));
+    s.appendChild(nd('text',{x:PL-8,y:y+4,'text-anchor':'end','class':'tick'},(top*i/4/1000)+'k'));
+  }
+  var iw=pw/YEARS.length, bw=Math.min(iw*0.5,nar?40:64);
+  YEARS.forEach(function(y,idx){
+    var cx=PL+iw*idx+iw/2, v=AGG[y].fyc;
+    var h=(v/top)*ph;
+    var col=(y==='2026')?'#9db4cc':(y==='2023'?'#0e7c66':'#B3123F');
+    s.appendChild(nd('rect',{x:cx-bw/2,y:PT+ph-h,width:bw,height:Math.max(h,0.6),rx:3,fill:col}));
+    s.appendChild(nd('title',{},YLBL[y]+'　FYC '+fmt(v)));
+    s.appendChild(nd('text',{x:cx,y:PT+ph-h-6,'text-anchor':'middle','class':'barlab'},fmt(v)));
+    s.appendChild(nd('text',{x:cx,y:H-PB+18,'text-anchor':'middle','class':'tick'},YLBL[y]));
+  });
+  // 目標線
+  var yt=PT+ph-(TARGET/top)*ph;
+  s.appendChild(nd('line',{x1:PL,y1:yt,x2:W-PR,y2:yt,stroke:'#B3123F','stroke-width':1.6,'class':'dash'}));
+  s.appendChild(nd('text',{x:W-PR,y:yt-6,'text-anchor':'end',fill:'#B3123F','font-size':10.5,'font-weight':700},'目標 1,380,000'));
+  box.appendChild(s);
+}
+
+/* ---- 結構：純新做 / Top-up / 續保 ---- */
+function drawMix(){
+  var box=el('c-mix'); box.innerHTML='';
+  var nar=narrow(), W=nar?430:900, rowH=nar?82:74, PT=10, PL=nar?10:12, PR=nar?10:12;
+  var H=PT+rowH*YEARS.length+16, pw=W-PL-PR;
+  var series=[
+    {k:'renew', name:'續保／服務壽險', col:'#0e7c66'},
+    {k:'newLife', name:'純新做壽險', col:'#2f5d8a'},
+    {k:'topup', name:'Top-up＋整付', col:'#b8860b'}
+  ];
+  var max=0;
+  YEARS.forEach(function(y){ series.forEach(function(se){ max=Math.max(max,sev(AGG[y],se.k)); }); });
+  var top=niceTop(max,100000);
+  var s=svg(W,H);
+  var hbw=(pw-20)/3;
+  series.forEach(function(se,i){
+    var x=PL+10+i*hbw+hbw*0.33;
+    s.appendChild(nd('text',{x:x,y:PT-1,'text-anchor':'middle','class':'rowlab2'},se.name));
+  });
+  YEARS.forEach(function(y,ri){
+    var y0=PT+18+rowH*ri;
+    s.appendChild(nd('text',{x:PL,y:y0+11,'class':'rowlab'},YLBL[y]));
+    var bw=(pw-20)/3;
+    series.forEach(function(se,si){
+      var v=sev(AGG[y],se.k), x=PL+10+si*bw;
+      var h=(v/top)*PlotH(rowH);
+      s.appendChild(nd('rect',{x:x,y:y0+18+PlotH(rowH)-h,width:Math.max(bw*0.66,0.6),height:Math.max(h,0.6),rx:3,fill:se.col,opacity:y==='2026'?0.6:1}));
+      s.appendChild(nd('title',{},YLBL[y]+'　'+se.name+'　'+fmt(v)));
+      s.appendChild(nd('text',{x:x+bw*0.33,y:y0+18+PlotH(rowH)-h-5,'text-anchor':'middle','class':'barlab'},fmt(v)));
+    });
+    s.appendChild(nd('line',{x1:PL,y1:y0+rowH-4,x2:W-PR,y2:y0+rowH-4,'class':'gl'}));
+  });
+  box.appendChild(s);
+  function PlotH(rh){ return nar?44:48; }
+  function sev(a,k){
+    if(k==='newLife') return a.newLife;
+    if(k==='topup') return a.topup;
+    return Math.max(a.pureLife-a.newLife,0);
+  }
+}
+
+/* ---- 個案量 + 單價 ---- */
+function drawCases(){
+  var box=el('c-cases'); box.innerHTML='';
+  var nar=narrow(), W=nar?430:900, H=nar?300:330, PL=nar?46:60, PR=nar?44:62, PT=18, PB=nar?42:46;
+  var pw=W-PL-PR, ph=H-PT-PB;
+  var tops=niceTop(Math.max.apply(null,YEARS.map(function(y){return AGG[y].deliv;})),50);
+  var s=svg(W,H);
+  for(var i=0;i<=4;i++){
+    var y=PT+ph-ph*i/4;
+    s.appendChild(nd('line',{x1:PL,y1:y,x2:W-PR,y2:y,'class':i===0?'axis':'gl'}));
+    s.appendChild(nd('text',{x:PL-8,y:y+4,'text-anchor':'end','class':'tick'},(tops*i/4)));
+  }
+  var iw=pw/YEARS.length, bw=Math.min(iw*0.44,nar?34:54);
+  var maxPer=Math.max.apply(null,YEARS.map(function(y){return AGG[y].per;}));
+  var ptop=niceTop(maxPer,2500);
+  var pts=[];
+  YEARS.forEach(function(y,idx){
+    var cx=PL+iw*idx+iw/2, d=AGG[y].deliv;
+    var h=(d/tops)*ph;
+    s.appendChild(nd('rect',{x:cx-bw/2,y:PT+ph-h,width:bw,height:Math.max(h,0.6),rx:3,fill:y==='2026'?'#9db4cc':'#2f5d8a'}));
+    s.appendChild(nd('title',{},YLBL[y]+'　已交付 '+d+' 宗　每宗 '+fmt(AGG[y].per)));
+    s.appendChild(nd('text',{x:cx,y:PT+ph-h-6,'text-anchor':'middle','class':'barlab'},d));
+    s.appendChild(nd('text',{x:cx,y:H-PB+18,'text-anchor':'middle','class':'tick'},YLBL[y]));
+    pts.push([cx, PT+ph-((AGG[y].per/ptop)*ph)]);
+  });
+  s.appendChild(nd('polyline',{points:pts.map(function(p){return p[0]+','+p[1];}).join(' '),fill:'none',stroke:'#B3123F','stroke-width':2.4,'stroke-linejoin':'round'}));
+  pts.forEach(function(p,i){
+    s.appendChild(nd('circle',{cx:p[0],cy:p[1],r:3.6,fill:'#fff',stroke:'#B3123F','stroke-width':2}));
+    s.appendChild(nd('text',{x:p[0]+7,y:p[1]-6,'class':'barlab',fill:'#B3123F'},fmt(YEARS[i]&&AGG[YEARS[i]].per)));
+  });
+  box.appendChild(s);
+}
+
+/* ---- 逐位組員 ---- */
+function drawAgents(){
+  var box=el('c-agents'); box.innerHTML='';
+  var nar=narrow(), W=nar?430:900, rowH=nar?112:104, PT=8, PL=8, PR=nar?8:10;
+  var H=PT+rowH*AGENTS.length+18, pw=W-PL-PR;
+  var max=0;
+  AGENTS.forEach(function(a){ YEARS.forEach(function(y){ max=Math.max(max,a.v[y]); }); });
+  var top=niceTop(max,200000);
+  var cols={'2022':'#d9dde4','2023':'#c3ccd8','2024':'#9db4cc','2025':'#2f5d8a','2026':'#B3123F'};
+  var s=svg(W,H);
+  AGENTS.forEach(function(a,ri){
+    var y0=PT+rowH*ri+12;
+    s.appendChild(nd('text',{x:PL,y:y0-1,'class':'rowlab'},a.name));
+    s.appendChild(nd('text',{x:PL,y:y0+13,'class':'rowlab2'},a.code));
+    YEARS.forEach(function(y,si){
+      var yy=y0+22+si*(nar?13:14);
+      var w=(a.v[y]/top)*pw;
+      s.appendChild(nd('rect',{x:PL,y:yy,width:Math.max(w,0.6),height:nar?9:10,rx:2,fill:cols[y]}));
+      s.appendChild(nd('title',{},YLBL[y]+'　'+fmt(a.v[y])));
+      if(a.v[y]>0)
+        s.appendChild(nd('text',{x:PL+Math.max(w,0)+5,y:yy+(nar?8:9),'class':'barlab'},fmt(a.v[y])));
+    });
+    var sh=(a.v['2025']/AGG['2025'].fyc*100);
+    s.appendChild(nd('text',{x:W-PR,y:y0+9,'text-anchor':'end','class':'rowlab2'},'2025 佔 '+sh.toFixed(1)+'%'));
+    s.appendChild(nd('line',{x1:PL,y1:y0+rowH-8,x2:W-PR,y2:y0+rowH-8,'class':'gl'}));
+  });
+  box.appendChild(s);
+
+  var head='<thead><tr><th>組員</th><th>姓名</th>';
+  YEARS.forEach(function(y){ head+='<th>'+YLBL[y]+'</th>'; });
+  head+='<th>2023–25 合計</th><th>2025 佔比</th></tr></thead><tbody>';
+  var body='';
+  AGENTS.forEach(function(a){
+    var sum=a.v['2023']+a.v['2024']+a.v['2025'];
+    var sh=a.v['2025']/AGG['2025'].fyc*100;
+    body+='<tr><td>'+a.code+'</td><td>'+a.name+'</td>';
+    YEARS.forEach(function(y){ body+='<td class="num">'+fmt(a.v[y])+'</td>'; });
+    body+='<td class="num">'+fmt(sum)+'</td><td class="num">'+sh.toFixed(1)+'%</td></tr>';
+  });
+  var tsum=0; YEARS.forEach(function(y){ tsum+=AGG[y].fyc; });
+  body+='<tr class="tot"><td>合計</td><td>組別</td>';
+  YEARS.forEach(function(y){ body+='<td class="num">'+fmt(AGG[y].fyc)+'</td>'; });
+  body+='<td class="num">'+fmt(AGG['2023'].fyc+AGG['2024'].fyc+AGG['2025'].fyc)+'</td><td class="num">100.0%</td></tr>';
+  el('t-agents').innerHTML=head+body+'</tbody>';
+}
+
+/* ---- 年度表 ---- */
+function drawYearTable(){
+  var head='<thead><tr><th>年度</th><th>FYC 總額</th><th>YoY</th><th>純新做壽險</th><th>Top-up＋整付</th>'
+          +'<th>續保／服務壽險</th><th>A&amp;H（另列）</th><th>年金 (c)</th>'
+          +'<th>已交付個案</th><th>平均每宗 FYC</th></tr></thead><tbody>';
+  var body='';
+  YEARS.forEach(function(y,i){
+    var a=AGG[y];
+    var tag;
+    if(y==='2026'){
+      var gs=(a.fyc-LY_SAME)/LY_SAME*100;
+      tag='<span class="tag r">▼ '+pct(Math.abs(gs),true)+'</span><div class="rowlab2" style="font-size:10.5px">vs 同期</div>';
+    } else {
+      var prev=(i>0)?AGG[YEARS[i-1]].fyc:null;
+      var g=yoy(a.fyc,prev);
+      tag = (g==null)?'<span class="tag n">—</span>'
+        : (g>0?'<span class="tag g">▲ '+pct(g,true)+'</span>':'<span class="tag r">▼ '+pct(Math.abs(g),true)+'</span>');
+    }
+    var renew=Math.max(a.pureLife-a.newLife,0);
+    body+='<tr'+(y==='2026'?' class="sub"':'')+'><td>'+YLBL[y]+'</td><td class="num">'+fmt(a.fyc)+'</td><td>'+tag
+      +'</td><td class="num">'+fmt(a.newLife)+'</td><td class="num">'+fmt(a.topup)+'</td>'
+      +'<td class="num">'+fmt(renew)+'</td><td class="num">'+fmt(a.ah)+'</td><td class="num">'+fmt(a.pen)+'</td>'
+      +'<td class="num">'+a.deliv+'</td><td class="num">'+fmt(a.per)+'</td></tr>';
+  });
+  el('t-year').innerHTML=head+body+'</tbody>';
+  var hint=document.getElementById('yearhint');
+  if(hint) hint.innerHTML='2026 為 1–9 月累計，其 YoY 為<b>與 2025 同期（1–9 月，1,055,006）比較</b>，不可與全年相比。A&amp;H 為另列項，不計入 FYC 總額。';
+}
+
+/* ---- 組成表 ---- */
+function drawComp(){
+  var rows=[
+    ['純新做壽險 FYC','newLife',false],
+    ['續保／服務壽險 FYC','renew',true],
+    ['純壽險 FYC（Pure Life）','pureLife',false],
+    ['Top-up ＋ 整付保費 FYC','topup',false],
+    ['壽險 FYC 小計','lifeTot',true],
+    ['PA 個人意外 FYC','pa',false],
+    ['壽險 ＋ PA (a)','paTot',true],
+    ['團體保險 (b)','grp',false],
+    ['年金 (c)','pen',false],
+    ['FYC 總額 (a)+(b)+(c)','fyc',true]
+  ];
+  var head='<thead><tr><th>項目</th>';
+  YEARS.forEach(function(y){ head+='<th>'+YLBL[y]+'</th>'; });
+  head+='</tr></thead><tbody>';
+  var body='';
+  rows.forEach(function(r){
+    var isTot=(r[0].indexOf('FYC 總額')===0);
+    body+='<tr class="'+(isTot?'tot':'sub')+'"><td>'+r[0]+'</td>';
+    YEARS.forEach(function(y){
+      var v = r[1]==='renew' ? Math.max(AGG[y].pureLife-AGG[y].newLife,0) : AGG[y][r[1]];
+      body+='<td class="num">'+fmt(v)+'</td>';
+    });
+    body+='</tr>';
+  });
+  body+='<tr><td>A&amp;H（健康險及附加契約）<b>　※ 不計入 FYC 總額</b></td>';
+  YEARS.forEach(function(y){ body+='<td class="num" style="color:var(--ink3)">'+fmt(AGG[y].ah)+'</td>'; });
+  body+='</tr>';
+  el('t-comp').innerHTML=head+body+'</tbody>';
+}
+
+/* ---- 持續率表 ---- */
+function drawPers(){
+  var head='<thead><tr><th>組員</th><th>姓名</th>'
+    +'<th>2023 CM</th><th>2023 P12m</th><th>2024 CM</th><th>2024 P12m</th><th>2025 CM</th><th>2025 P12m</th>'
+    +'</tr></thead><tbody>';
+  var body='';
+  AGENTS.forEach(function(a){
+    body+='<tr><td>'+a.code+'</td><td class="name">'+a.name+'</td>';
+    ['2023','2024','2025'].forEach(function(y){
+      var v=PERS[y][a.code];
+      if(!v){ body+='<td class="num" style="color:var(--ink3)">—</td><td class="num" style="color:var(--ink3)">—</td>'; }
+      else body+='<td class="num">'+v[0].toFixed(2)+'%</td><td class="num">'+v[1].toFixed(2)+'%</td>';
+    });
+    body+='</tr>';
+  });
+  body+='<tr class="tot"><td>Total</td><td>組別合計</td>';
+  ['2023','2024','2025'].forEach(function(y){
+    var v=PERS[y]['Total'];
+    body+='<td class="num">'+v[0].toFixed(2)+'%</td><td class="num">'+v[1].toFixed(2)+'%</td>';
+  });
+  body+='</tr>';
+  el('t-pers').innerHTML=head+body+'</tbody>';
+}
+
+/* ---- 目標表 ---- */
+function drawGoal(){
+  var head='<thead><tr><th>項目</th><th>數值</th></tr></thead><tbody>';
+  var body='';
+  GOAL.forEach(function(r){
+    var cls = (r[2]==='down')?' class="num down"':' class="num"';
+    body+='<tr><td style="white-space:normal">'+r[0]+'</td><td'+cls+'>'+(typeof r[1]==='number'?fmt(r[1]):r[1])+'</td></tr>';
+  });
+  el('t-goal').innerHTML=head+body+'</tbody>';
+}
+
+function renderAll(){
+  drawYear(); drawMix(); drawCases(); drawAgents();
+  drawYearTable(); drawComp(); drawPers(); drawGoal();
+}
+renderAll();
+var rt;
+window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(renderAll,220); });
+</script>
+</body>
+</html>
