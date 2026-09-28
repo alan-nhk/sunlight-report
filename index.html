@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>SUNLIGHT 組別業績報告 · 2026-09</title>
+<title>SUNLIGHT 組別業績報告 · FYC 主導 · 2026 年度</title>
 <style>
   :root{
     --bg:#f5f6f8; --card:#ffffff; --ink:#1b1f27; --ink2:#525a68; --ink3:#8b93a1;
     --line:#e3e6ec; --up:#0e7c66; --down:#c0392b; --neutral:#7a8290;
-    --brand:#B3123F; --brand2:#7a6b63; --accent:#2f5d8a; --gold:#b8860b;
+    --brand:#B3123F; --accent:#2f5d8a; --gold:#b8860b; --track:#e8ebf0;
     --shadow:0 1px 2px rgba(16,24,40,.06),0 4px 16px rgba(16,24,40,.06);
   }
   *{box-sizing:border-box}
@@ -21,36 +21,25 @@
   }
   .wrap{max-width:1060px;margin:0 auto;padding:0 18px 64px}
 
-  /* ---------- header ---------- */
-  header{
-    background:linear-gradient(135deg,#1b1f27 0%,#2c333f 55%,#3d2b33 100%);
-    color:#fff; padding:34px 18px 30px; margin-bottom:26px;
-  }
+  header{background:linear-gradient(135deg,#1b1f27 0%,#2c333f 55%,#3d2b33 100%);color:#fff;padding:34px 18px 30px;margin-bottom:26px}
   .head-in{max-width:1060px;margin:0 auto}
   .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#c9a24a;font-weight:700}
   h1{margin:8px 0 6px;font-size:30px;line-height:1.25;letter-spacing:.01em}
   .sub{color:#c3c9d4;font-size:14px}
   .meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
-  .pill{
-    background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
-    border-radius:999px;padding:5px 12px;font-size:12.5px;color:#e8ebf1
-  }
+  .pill{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px;font-size:12.5px;color:#e8ebf1}
   .pill.warn{background:rgba(214,138,10,.16);border-color:rgba(214,138,10,.45);color:#f0c96a}
+  .pill.hot{background:rgba(192,57,43,.20);border-color:rgba(192,57,43,.55);color:#ffb4a8}
 
-  /* ---------- sections ---------- */
   section{margin:0 0 34px}
-  h2{
-    font-size:19px;margin:0 0 4px;letter-spacing:.01em;
-    display:flex;align-items:center;gap:9px
-  }
+  h2{font-size:19px;margin:0 0 4px;letter-spacing:.01em;display:flex;align-items:center;gap:9px}
   h2::before{content:"";width:4px;height:19px;border-radius:2px;background:var(--brand);display:inline-block}
   .h2sub{color:var(--ink3);font-size:13px;margin:0 0 14px}
-
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
 
-  /* ---------- KPI ---------- */
   .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
   .kpi{padding:16px 16px 14px}
+  .kpi.hero{background:linear-gradient(160deg,#fff 0%,#fdf6f8 100%);border-color:#f0d9e0}
   .kpi .k{font-size:12.5px;color:var(--ink3);letter-spacing:.02em}
   .kpi .v{font-size:26px;font-weight:750;letter-spacing:-.01em;margin:4px 0 2px;font-variant-numeric:tabular-nums}
   .kpi .v small{font-size:13px;font-weight:600;color:var(--ink3);margin-left:3px}
@@ -58,7 +47,18 @@
   .kpi .n{font-size:12px;color:var(--ink3);margin-top:2px}
   .up{color:var(--up)} .down{color:var(--down)} .neu{color:var(--neutral)}
 
-  /* ---------- charts ---------- */
+  .prog{padding:18px 18px 16px}
+  .ptrack{position:relative;height:34px;background:var(--track);border-radius:8px;margin:30px 0 6px}
+  .pfill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#B3123F,#d94a6e);border-radius:8px 0 0 8px;overflow:hidden}
+  .pmid{position:absolute;top:-6px;bottom:-6px;width:2px;background:#1b1f27}
+  .pmidlab{position:absolute;top:-24px;font-size:11.5px;font-weight:700;color:#1b1f27;transform:translateX(-50%);white-space:nowrap}
+  .pfilllab{position:absolute;left:0;top:0;bottom:0;display:flex;align-items:center;padding-left:12px;color:#fff;font-weight:750;font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .plab{display:flex;justify-content:space-between;font-size:12px;color:var(--ink3);margin-top:6px}
+  .pstats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+  .pstat{background:#fafbfc;border:1px solid var(--line);border-radius:9px;padding:10px 12px}
+  .pstat .k{font-size:11.5px;color:var(--ink3)}
+  .pstat .v{font-size:17px;font-weight:730;font-variant-numeric:tabular-nums;margin-top:2px}
+
   .chart{padding:16px 14px 10px}
   .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink2);padding:0 4px 10px}
   .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
@@ -69,8 +69,8 @@
   .barlab{fill:var(--ink2);font-size:11px;font-variant-numeric:tabular-nums}
   .rowlab{fill:var(--ink);font-size:12.5px}
   .rowlab2{fill:var(--ink3);font-size:11px}
+  .dash{stroke-dasharray:6 5}
 
-  /* ---------- tables ---------- */
   .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
   table{border-collapse:collapse;width:100%;min-width:640px;font-size:13.5px}
   th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -87,24 +87,19 @@
   .hint{font-size:12px;color:var(--ink3);padding:8px 12px 12px}
   .scrollhint{display:none;font-size:11.5px;color:var(--ink3);padding:0 2px 6px}
 
-  /* ---------- prose ---------- */
   .prose{padding:16px 18px}
   .prose ol,.prose ul{margin:0;padding-left:20px}
   .prose li{margin:7px 0}
-  .prose b{font-weight:700}
   .callout{border-left:3px solid var(--brand);background:#fff;padding:12px 15px;border-radius:0 10px 10px 0;margin:0 0 12px}
   .callout.good{border-left-color:var(--up)}
   .callout.warn{border-left-color:#d68910}
 
-  /* ---------- footer ---------- */
   footer{border-top:1px solid var(--line);margin-top:8px;padding:18px 0 0;color:var(--ink3);font-size:12.5px}
-  .badge-internal{
-    display:inline-block;background:#fdecea;color:#a5301f;border:1px solid #f6cfc9;
-    border-radius:7px;padding:4px 10px;font-size:12px;font-weight:700;letter-spacing:.02em
-  }
+  .badge-internal{display:inline-block;background:#fdecea;color:#a5301f;border:1px solid #f6cfc9;border-radius:7px;padding:4px 10px;font-size:12px;font-weight:700;letter-spacing:.02em}
 
   @media (max-width:860px){
     .kpis{grid-template-columns:repeat(2,1fr)}
+    .pstats{grid-template-columns:repeat(2,1fr)}
     h1{font-size:24px}
   }
   @media (max-width:520px){
@@ -118,6 +113,8 @@
     table{font-size:12.5px}
     th,td{padding:8px 9px}
     .scrollhint{display:block}
+    .prog{padding:14px 12px 12px}
+    .pstat .v{font-size:15px}
   }
 </style>
 </head>
@@ -125,94 +122,125 @@
 
 <header>
   <div class="head-in">
-    <div class="eyebrow">Agency Performance Review</div>
+    <div class="eyebrow">Agency Performance Review · FYC Based</div>
     <h1>SUNLIGHT 組別業績報告</h1>
     <div class="sub">SUC SUNLIGHT (V9)　·　組別代號 20021　·　主管 B4226</div>
     <div class="meta">
       <span class="pill">數據日期　2026-09-27</span>
       <span class="pill">幣別　HKD</span>
-      <span class="pill">組員　5 位</span>
+      <span class="pill">主指標　FYC</span>
+      <span class="pill hot">年度目標　1,380,000</span>
       <span class="pill warn">⚠️ 9 月未足月（截至 27 日）</span>
-      <span class="pill warn">內部資料 · 請勿外傳</span>
+      <span class="pill warn">內部資料</span>
     </div>
   </div>
 </header>
 
 <div class="wrap">
 
-  <!-- ============ KPI ============ -->
   <section>
-    <h2>組別整體表現</h2>
-    <p class="h2sub">本年累計（2026-01-01 至 2026-09-27）對比去年同期</p>
+    <h2>FYC 核心指標</h2>
+    <p class="h2sub">本年累計（2026-01-01 至 2026-09-27）· 以 FYC（首年佣金）為主指標</p>
     <div class="kpis">
-      <div class="card kpi">
-        <div class="k">FYP 總額</div>
-        <div class="v">2,657,422<small>HKD</small></div>
-        <div class="d down">▼ 37.45%</div>
-        <div class="n">去年同期 4,248,712</div>
-      </div>
-      <div class="card kpi">
-        <div class="k">FYC 總額</div>
+      <div class="card kpi hero">
+        <div class="k">FYC 本年累計</div>
         <div class="v">657,944<small>HKD</small></div>
         <div class="d down">▼ 37.63%</div>
         <div class="n">去年同期 1,055,006</div>
       </div>
-      <div class="card kpi">
-        <div class="k">已交付個案</div>
-        <div class="v">95<small>宗</small></div>
-        <div class="d down">▼ 8.65%</div>
-        <div class="n">去年同期 104 宗</div>
+      <div class="card kpi hero">
+        <div class="k">年度目標達成率</div>
+        <div class="v">47.7<small>%</small></div>
+        <div class="d down">▼ 落後 27.3 個百分點</div>
+        <div class="n">目標 1,380,000（時間已過 75%）</div>
       </div>
       <div class="card kpi">
-        <div class="k">平均每宗 FYP</div>
-        <div class="v">27,925<small>HKD</small></div>
-        <div class="d down">▼ 31.4%</div>
-        <div class="n">去年同期 40,696</div>
+        <div class="k">尚欠目標</div>
+        <div class="v">722,056<small>HKD</small></div>
+        <div class="d neu">餘 3 個月　月均需 240,685</div>
+        <div class="n">現時月均 73,105（需 3.29 倍）</div>
       </div>
       <div class="card kpi">
-        <div class="k">本月 FYP（至 27 日）</div>
-        <div class="v">111,601<small>HKD</small></div>
-        <div class="d down">▼ 64.27%</div>
-        <div class="n">上月 312,397</div>
+        <div class="k">本月 FYC（至 27 日）</div>
+        <div class="v">36,975<small>HKD</small></div>
+        <div class="d down">▼ 64.58%</div>
+        <div class="n">去年同月 104,411</div>
       </div>
       <div class="card kpi">
-        <div class="k">12 個月滾動 FYP</div>
-        <div class="v">3,481,751<small>HKD</small></div>
-        <div class="d down">▼ 30.64%</div>
-        <div class="n">持續率 P12m 95.99%</div>
+        <div class="k">平均每宗 FYC</div>
+        <div class="v">6,926<small>HKD</small></div>
+        <div class="d down">▼ 31.7%</div>
+        <div class="n">去年同期 10,144（以已交付 95 宗計）</div>
       </div>
-    </div>
-    <div class="card" style="margin-top:12px">
-      <div class="callout" style="margin:14px 16px 14px 16px">
-        <b>一句話總結：</b>金額跌 37%、個案只跌 9% —— <b>生意數目保得住，但每宗單價大跌（-31%）</b>。問題不在「做少幾單」，而在「做的單細了」。
+      <div class="card kpi">
+        <div class="k">12 個月滾動 FYC</div>
+        <div class="v">849,318<small>HKD</small></div>
+        <div class="d down">▼ 31.52%</div>
+        <div class="n">相當於年目標的 61.5%</div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 趨勢 ============ -->
   <section>
-    <h2>月度趨勢（近 12 個月）</h2>
-    <p class="h2sub">口徑：壽險＋PA Total　·　柱＝FYP，線＝FYC</p>
+    <h2>年度目標進度</h2>
+    <p class="h2sub">目標 1,380,000 FYC　·　已過 9 / 12 個月</p>
+    <div class="card prog">
+      <div class="ptrack">
+        <div class="pfill" style="width:47.68%"><div class="pfilllab">已達 47.7%</div></div>
+        <div class="pmid" style="left:75%"><div class="pmidlab">時間進度 75%</div></div>
+      </div>
+      <div class="plab"><span>0</span><span>目標 1,380,000</span></div>
+      <div class="pstats">
+        <div class="pstat"><div class="k">已達成</div><div class="v">657,944</div></div>
+        <div class="pstat"><div class="k">按時間比例應達（75%）</div><div class="v">1,035,000</div></div>
+        <div class="pstat"><div class="k">進度落後</div><div class="v down">377,056</div></div>
+        <div class="pstat"><div class="k">餘下 3 個月所需月均</div><div class="v down">240,685</div></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="tblwrap"><table id="t-scen"></table></div>
+      <div class="hint">情境推算以「今年 1–9 月實際月數字」為基礎，不含任何新客戶或新產品假設。</div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="callout warn" style="margin:14px 16px">
+        <b>如實結論：</b>要達 1,380,000，餘下 3 個月需要月均 <b>240,685</b> FYC。<br>
+        而今年<b>最佳月份</b>（3 月）只有 <b>158,151</b> —— 即使把歷史最佳月份連做 3 次，年底亦只到 <b>1,132,397（82.1%）</b>。<br>
+        換言之，<b>按現有節奏與人力，原定目標客觀上不可能達成</b>；建議據此重訂基準或正式提出資源要求，而非事後解釋。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2026 月度 FYC 與目標節奏</h2>
+    <p class="h2sub">柱＝每月 FYC　·　虛線＝目標月均 115,000（＝1,380,000 ÷ 12）</p>
     <div class="card chart">
       <div class="legend">
-        <span><i style="background:#2f5d8a"></i>FYP（HKD）</span>
-        <span><i style="background:#b8860b"></i>FYC（HKD）</span>
-        <span style="color:var(--ink3)">2026 年 9 月為未足月數據</span>
+        <span><i style="background:#2f5d8a"></i>每月 FYC（HKD）</span>
+        <span><i style="background:#0e7c66"></i>該月達標</span>
+        <span><i style="background:#B3123F"></i>目標月均 115,000</span>
+        <span style="color:var(--ink3)">9 月為未足月</span>
       </div>
-      <div id="c-trend"></div>
+      <div id="c-monthly"></div>
+    </div>
+    <div class="card chart" style="margin-top:12px">
+      <div class="legend">
+        <span><i style="background:#0e7c66"></i>累計 FYC</span>
+        <span><i style="background:#B3123F"></i>目標節奏（每月 115,000）</span>
+      </div>
+      <div id="c-cum"></div>
+      <div class="hint">缺口由 1 月 −69,581 擴大至 9 月 −389,020，且每月都在擴大 —— 沒有一個月追上過節奏。</div>
     </div>
     <div class="card" style="margin-top:12px">
-      <div class="tblwrap">
-        <table id="t-trend"></table>
-      </div>
+      <div class="tblwrap"><table id="t-monthly"></table></div>
       <div class="scrollhint">← 可左右滑動查看完整表格</div>
     </div>
   </section>
 
-  <!-- ============ 逐人 ============ -->
   <section>
-    <h2>逐位組員拆解</h2>
-    <p class="h2sub">FYP（壽險＋PA Total）· 本年累計 vs 去年同期</p>
+    <h2>逐位組員 FYC</h2>
+    <p class="h2sub">本年累計 vs 去年同期 · 各人佔組別比重</p>
     <div class="card chart">
       <div class="legend">
         <span><i style="background:#d9dde4"></i>去年同期</span>
@@ -221,14 +249,20 @@
       <div id="c-agents"></div>
     </div>
     <div class="card" style="margin-top:12px">
-      <div class="tblwrap">
-        <table id="t-agents"></table>
-      </div>
+      <div class="tblwrap"><table id="t-agents"></table></div>
       <div class="scrollhint">← 可左右滑動查看完整表格</div>
     </div>
   </section>
 
-  <!-- ============ 品質 ============ -->
+  <section>
+    <h2>FYC 業務線分項</h2>
+    <p class="h2sub">組別合計 · 本年累計 vs 去年同期</p>
+    <div class="card">
+      <div class="tblwrap"><table id="t-lines"></table></div>
+      <div class="scrollhint">← 可左右滑動查看完整表格</div>
+    </div>
+  </section>
+
   <section>
     <h2>品質指標</h2>
     <p class="h2sub">持續率（2026 年 8 月）與保費回款率（本年累計）</p>
@@ -240,300 +274,268 @@
       <div id="c-persist"></div>
     </div>
     <div class="card chart" style="margin-top:12px">
-      <div class="legend">
-        <span><i style="background:#2f5d8a"></i>已付／已提交 FYP 比率（保費回款率）</span>
-      </div>
+      <div class="legend"><span><i style="background:#2f5d8a"></i>已付／已提交 FYC 比率（保費回款率）</span></div>
       <div id="c-collect"></div>
     </div>
     <div class="card" style="margin-top:12px">
-      <div class="tblwrap">
-        <table id="t-quality"></table>
-      </div>
+      <div class="tblwrap"><table id="t-quality"></table></div>
       <div class="scrollhint">← 可左右滑動查看完整表格</div>
     </div>
   </section>
 
-  <!-- ============ 診斷 ============ -->
   <section>
     <h2>五個關鍵診斷</h2>
-    <p class="h2sub">由 AMS 數據推導</p>
+    <p class="h2sub">以 FYC 口徑推導</p>
     <div class="card prose">
       <div class="callout warn">
-        <b>1. 單價塌陷（最核心問題）</b><br>
-        平均每宗 FYP 由 40,696 跌至 27,925（<b>-31%</b>）。個案量僅跌 8.65%，但金額跌 37.45% ——
-        落差幾乎全部來自「單價」而非「數量」。
+        <b>1. 目標落後已成定局，且缺口每月擴大</b><br>
+        9 個月只做到 47.7%，時間已過 75%。累計缺口由 1 月 −69,581 一路擴大到 9 月 <b>−389,020</b> ——
+        <b>沒有一個月追上過目標節奏</b>。
       </div>
       <div class="callout warn">
-        <b>2. 兩大支柱同時失速，且高度依賴單月</b><br>
-        D8191 去年含大額整付保費（2,899,810 → 1,041,682），屬高基數回落；
-        全年業績靠 <b>3 月單月 650,386</b> 撐起（佔本年 1–9 月近 1/4），5 月更崩至 122,955。
+        <b>2. 單價塌陷是主因</b><br>
+        平均每宗 FYC 由 10,144 跌至 <b>6,926（-31.7%）</b>。個案量僅跌 8.65%，但 FYC 跌 37.63%
+        —— 跌幅大部分來自「每單賺少了」，不是「做少幾單」。
       </div>
       <div class="callout warn">
-        <b>3. PA 業務近乎停擺</b><br>
-        PA 合計 FYP 由 54,410 跌至 <b>10,510（-80.68%）</b>，本年僅剩去年不足兩成 —— 團隊基本放棄這條業務線。
+        <b>3. D8191 高基數回落，佔比仍最大</b><br>
+        D8191 由 650,125 跌至 250,694（<b>-61.43%</b>），仍佔組別 38.1%。
+        組別跌幅中約 <b>87%</b>（344,431 / 397,062）來自佢一人。
       </div>
       <div class="callout good">
-        <b>4. Top-up 是唯一亮點</b><br>
-        Top-up 保費由 16,814 增至 <b>513,450（+2,954%）</b>，顯示<b>舊客加保</b>動能明顯，是現成可放大的打法。
+        <b>4. 主管本人是唯一亮點</b><br>
+        B4226 由 130,084 增至 <b>222,460（+71.01%）</b>，佔比 33.8%，回款率最高（96.83%）
+        —— 可作為標桿打法，但一人之力補不了全組缺口。
       </div>
       <div class="callout warn">
         <b>5. 品質兩極化</b><br>
         回款率：主管 96.83%，但 G5047 僅 71.26%、J5700 僅 29.73%。
-        持續率長期健康（組別 P12m 95.99%），但<b>當月 CM 跌至 93.22%</b>，且主管本人只有 <b>62.12%</b> —— 有保單失效需即時跟進。
+        持續率長期健康（P12m 95.99%），但<b>當月 CM 跌至 93.22%</b>，主管本人僅 <b>62.12%</b>。
       </div>
     </div>
   </section>
 
-  <!-- ============ 建議 ============ -->
   <section>
     <h2>建議行動</h2>
     <p class="h2sub">按優先次序排列，可直接匯報</p>
     <div class="card">
-      <div class="tblwrap">
-        <table id="t-actions" style="min-width:600px"></table>
-      </div>
+      <div class="tblwrap"><table id="t-actions" style="min-width:600px"></table></div>
     </div>
   </section>
 
-  <!-- ============ 缺口 ============ -->
-  <section>
-    <h2>追平缺口</h2>
-    <p class="h2sub">若要回復去年同期水平，尚欠多少</p>
-    <div class="card prose">
-      <ul>
-        <li><b>FYP 尚欠 1,579,583</b> —— 餘下 3 個月（10–12 月）需月均 <b>526,528</b>，比現時月均 294,761 高 <b>79%</b>。</li>
-        <li><b>FYC 尚欠 397,062</b> —— 需月均 <b>132,354</b>，現時月均 73,105。</li>
-        <li><b>個案尚欠 9 宗</b> —— 這是三者中最容易達成的（每月多 3 宗）。</li>
-      </ul>
-      <div class="callout" style="margin-top:14px">
-        客觀而言，FYP／FYC 全年追平<b>不現實</b>；建議把目標定為
-        <b>「收窄跌幅至 25% 以內」＋「確保 9 月不再擴大單價跌幅」</b>，並以個案數與 PA／Top-up 回復作為可達成的次要目標。
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 限制 ============ -->
   <section>
     <h2>數據來源與限制</h2>
     <div class="card prose">
       <ol>
         <li>資料來自 AIA <b>營業員代表管理系統（AMS）</b> KRA 模組，數據日期 <b>2026-09-27</b>，幣別 HKD。</li>
+        <li><b>主指標為 FYC（首年佣金）</b>；FYC 總額 = 壽險 FYC ＋ 團體 FYC ＋ 年金 FYC。</li>
         <li><b>9 月為未足月</b>（截至 27 日），不可與完整月份直接比較。</li>
-        <li>逐位組員 FYP 合計 = 組別總額（<b>2,657,422 完全一致</b>）；個案 95 宗一致；<b>FYC 僅差 36 元</b>（Pension 分項歸屬差異，0.006%）。</li>
-        <li>月度趨勢以「壽險＋PA Total」為口徑，本年 1–9 月合計 2,652,851，與日視圖 YTD 一致。</li>
-        <li><b>WSM / 招募 / 生產力 / MPF 交叉銷售</b>於 2026 年 8 月均無數據（系統回報 No Data），故未納入本報告。</li>
+        <li>年度目標 <b>1,380,000</b> 由用戶提供（組別年度 FYC 目標）。</li>
+        <li>逐位組員 FYC 合計 = <b>657,980</b>，組別官方數 <b>657,944</b>，差 <b>36</b>（Pension 分項歸屬差異，0.005%）。</li>
+        <li>月度／累計圖表採「壽險＋PA」口徑（<b>不含團體及年金，約佔 1.8%</b>），9 個月合計 645,980；
+            其餘數字用官方 FYC 總額 657,944。差異已在圖上註明。</li>
+        <li><b>WSM／招募／生產力／MPF 交叉銷售</b>於 2026 年 8 月均無數據（系統回報 No Data），未納入。</li>
         <li>為 AMS 系統口徑（已勾選 Critical Policies），與公司正式財務報表可能存在時差。</li>
       </ol>
     </div>
   </section>
 
   <footer>
-    <span class="badge-internal">內部資料 · 請勿外傳</span>
-    <p style="margin:10px 0 0">資料擷取：2026-09-28　·　來源：AMS KRA 模組（Agency 20021）</p>
+    <span class="badge-internal">內部資料</span>
+    <p style="margin:10px 0 0">資料擷取：2026-09-28　·　來源：AMS KRA 模組（Agency 20021）　·　主指標：FYC</p>
   </footer>
 </div>
 
 <script>
-/* ============================================================
-   DATA
-   ============================================================ */
+var TARGET = 1380000;
 var DATA = {
   monthly: [
-    {ym:'2025-10', fyp:241634, fyc:61058, case:14},
-    {ym:'2025-11', fyp:420567, fyc:89613, case:11},
-    {ym:'2025-12', fyp:166698, fyc:52667, case:11},
-    {ym:'2026-01', fyp:199158, fyc:45419, case:9},
-    {ym:'2026-02', fyp:494702, fyc:111147, case:8},
-    {ym:'2026-03', fyp:650386, fyc:158151, case:14},
-    {ym:'2026-04', fyp:198046, fyc:61719, case:13},
-    {ym:'2026-05', fyp:122955, fyc:31615, case:14},
-    {ym:'2026-06', fyp:410735, fyc:93509, case:15},
-    {ym:'2026-07', fyp:226903, fyc:54276, case:9},
-    {ym:'2026-08', fyp:238365, fyc:54744, case:10},
-    {ym:'2026-09', fyp:111601, fyc:35400, case:10}
+    {ym:'2026-01', fyc:45419},
+    {ym:'2026-02', fyc:111147},
+    {ym:'2026-03', fyc:158151},
+    {ym:'2026-04', fyc:61719},
+    {ym:'2026-05', fyc:31615},
+    {ym:'2026-06', fyc:93509},
+    {ym:'2026-07', fyc:54276},
+    {ym:'2026-08', fyc:54744},
+    {ym:'2026-09', fyc:35400}
   ],
   agents: [
-    {code:'D8191', name:'SZE PING PING',  ly:2899810, ytd:1041682, g:-64.08, share:39.27, cases:23, paid:90.24,  p12:98.35, cm:100.00, riders:11, ridersLy:26},
-    {code:'B4226', name:'NG HIU KWAN',    ly:477092,  ytd:970169,  g:103.35, share:36.57, cases:29, paid:96.83,  p12:88.12, cm:62.12,  riders:22, ridersLy:18},
-    {code:'G5047', name:'NG SIU SING',    ly:360657,  ytd:356248,  g:-1.22,  share:13.43, cases:22, paid:71.26,  p12:94.51, cm:100.00, riders:18, ridersLy:21},
-    {code:'G4709', name:'CHAN LAI CHAU',  ly:494875,  ytd:253914,  g:-48.69, share:9.57,  cases:26, paid:74.96,  p12:99.15, cm:100.00, riders:26, ridersLy:33},
-    {code:'J5700', name:'WANG YINJUAN',   ly:0,       ytd:30838,   g:null,   share:1.16,  cases:2,  paid:29.73,  p12:100.00,cm:0.00,   riders:2, ridersLy:0}
+    {code:'D8191', name:'SZE PING PING', ly:650125, ytd:250694, g:-61.43, share:38.10, mtd:7,     paid:90.24,  p12:98.35,  cm:100.00, riders:11, ridersLy:26},
+    {code:'B4226', name:'NG HIU KWAN',   ly:130084, ytd:222460, g:71.01,  share:33.81, mtd:12436, paid:96.83,  p12:88.12,  cm:62.12,  riders:22, ridersLy:18},
+    {code:'G4709', name:'CHAN LAI CHAU', ly:159523, ytd:89368,  g:-43.97, share:13.58, mtd:12430, paid:74.96,  p12:99.15,  cm:100.00, riders:26, ridersLy:33},
+    {code:'G5047', name:'NG SIU SING',   ly:115274, ytd:84858,  g:-26.38, share:12.90, mtd:12102, paid:71.26,  p12:94.51,  cm:100.00, riders:18, ridersLy:21},
+    {code:'J5700', name:'WANG YINJUAN',  ly:0,      ytd:10600,  g:null,   share:1.61,  mtd:0,     paid:29.73,  p12:100.00, cm:0.00,   riders:2,  ridersLy:0}
   ],
-  agentsTotal: {ly:4232434, ytd:2652851, g:-37.33, cases:102, paid:85.61, p12:95.99, cm:93.22, riders:79},
+  total: {ly:1055006, ytd:657944, g:-37.63, mtd:36975, paid:85.61, p12:95.99, cm:93.22, riders:79, cases:95, lyCases:104},
+  lines: [
+    {name:'純新做壽險 FYC',   ly:644421,  ytd:326674, g:-49.30},
+    {name:'純壽險 FYC',       ly:668774,  ytd:333300, g:-50.16},
+    {name:'Top-up＋整付 FYC', ly:352012,  ytd:308451, g:-12.37},
+    {name:'壽險 FYC 小計',    ly:1020786, ytd:641751, g:-37.13},
+    {name:'PA FYC',           ly:16993,   ytd:4228,   g:-75.11},
+    {name:'A&H FYC',          ly:159635,  ytd:90708,  g:-43.17},
+    {name:'壽險＋PA FYC (a)', ly:1037779, ytd:645979, g:-37.75},
+    {name:'團體 FYC (b)',     ly:2556,    ytd:699,    g:191.15},
+    {name:'年金 FYC (c)',     ly:14671,   ytd:11266,  g:-23.21},
+    {name:'FYC 總額',         ly:1055006, ytd:657944, g:-37.63, isTotal:true}
+  ],
   actions: [
+    ['高','重訂年度基準：把 1,380,000 調整為現實目標，或正式提出資源／人手要求','B4226'],
     ['高','9/28–9/30 最後衝刺：把已提交未交付的 18 宗個案催到交付','全組'],
     ['高','立即處理持續率漏洞（當月 CM 93.22%，主管本人 62.12%）','B4226'],
-    ['高','逐客回款跟進，重訂繳費方式','G5047、J5700'],
-    ['中','產品結構轉向高 FYP（危疾／整付／儲蓄），重建單價','全組'],
-    ['中','重啟 PA 業務：設定最低月度 PA 目標','全組'],
-    ['中','複製 Top-up 加打：由現有客戶名單篩選加保機會','全組'],
-    ['低','新人帶教計劃（貢獻 1.2%／回款 29.7%）','J5700']
+    ['高','逐客回款跟進，重訂繳費方式（G5047 71.26%、J5700 29.73%）','G5047、J5700'],
+    ['中','D8191 一對一檢視：由高基數整付單轉向可持續的定期單','D8191'],
+    ['中','複製 B4226 打法（Top-up 加保）到其他組員','全組'],
+    ['中','重啟 PA 業務：設定最低月度 PA 目標（現跌 75.11%）','全組'],
+    ['低','新人帶教計劃（J5700 貢獻 1.61%）','J5700']
   ]
 };
 
-/* ============================================================
-   HELPERS
-   ============================================================ */
 var NF = new Intl.NumberFormat('en-US');
 function fmt(n){ if(n===null||n===undefined) return '—'; return NF.format(Math.round(n)); }
-function pct(v, withSign){
-  if(v===null||v===undefined) return '—';
-  var s = (withSign && v>0 ? '+' : '');
-  return s + v.toFixed(2) + '%';
-}
-function cls(v){ if(v===null||v===undefined) return 'neu'; return v>0?'up':(v<0?'down':'neu'); }
+function pct(v, ws){ if(v===null||v===undefined) return '—'; return (ws&&v>0?'+':'')+v.toFixed(2)+'%'; }
 function arrow(v){ if(v===null||v===undefined) return ''; return v>0?'▲ ':(v<0?'▼ ':''); }
 function el(id){ return document.getElementById(id); }
-function svg(w,h){
-  var s = document.createElementNS('http://www.w3.org/2000/svg','svg');
-  s.setAttribute('viewBox','0 0 '+w+' '+h);
-  s.setAttribute('preserveAspectRatio','xMidYMid meet');
-  return s;
-}
-function node(tag, attrs, text){
-  var e = document.createElementNS('http://www.w3.org/2000/svg', tag);
-  for(var k in attrs){ e.setAttribute(k, attrs[k]); }
-  if(text!==undefined) e.textContent = text;
-  return e;
-}
+function svg(w,h){ var s=document.createElementNS('http://www.w3.org/2000/svg','svg'); s.setAttribute('viewBox','0 0 '+w+' '+h); s.setAttribute('preserveAspectRatio','xMidYMid meet'); return s; }
+function node(t,a,x){ var e=document.createElementNS('http://www.w3.org/2000/svg',t); for(var k in a){e.setAttribute(k,a[k]);} if(x!==undefined)e.textContent=x; return e; }
 function isNarrow(){ return window.innerWidth < 620; }
+function niceTop(v, step){ return Math.ceil(v/step)*step; }
 
-/* ============================================================
-   CHART 1 — 12-month combo: bars (FYP) + line (FYC)
-   ============================================================ */
-function drawTrend(){
-  var box = el('c-trend'); box.innerHTML = '';
-  var d = DATA.monthly;
+function drawMonthly(){
+  var box = el('c-monthly'); box.innerHTML='';
+  var d = DATA.monthly, pace = TARGET/12;
   var nar = isNarrow();
-  var W = nar?430:900, H = nar?300:340, PL = nar?46:62, PR = nar?12:18, PT = 16, PB = nar?42:46;
+  var W = nar?430:900, H = nar?300:330, PL = nar?48:64, PR = nar?14:18, PT = 16, PB = nar?42:46;
   var plotW = W-PL-PR, plotH = H-PT-PB;
-  var maxF = Math.max.apply(null, d.map(function(r){return r.fyp;}));
-  var maxC = Math.max.apply(null, d.map(function(r){return r.fyc;}));
-  var top = Math.ceil(maxF/100000)*100000;
+  var top = niceTop(Math.max(pace, Math.max.apply(null,d.map(function(r){return r.fyc;}))), 50000);
   var s = svg(W,H);
-
-  // grid + y labels
   for(var i=0;i<=4;i++){
-    var v = top*i/4, y = PT + plotH - plotH*i/4;
-    s.appendChild(node('line',{x1:PL,y1:y,x2:W-PR,y2:y,'class': i===0?'axis':'gl'}));
-    s.appendChild(node('text',{x:PL-8,y:y+4,'text-anchor':'end','class':'tick'}, (v/1000)+'k'));
+    var y = PT + plotH - plotH*i/4;
+    s.appendChild(node('line',{x1:PL,y1:y,x2:W-PR,y2:y,'class':i===0?'axis':'gl'}));
+    s.appendChild(node('text',{x:PL-8,y:y+4,'text-anchor':'end','class':'tick'}, Math.round(top*i/4/1000)+'k'));
   }
-  var iw = plotW/d.length, bw = Math.min(iw*0.56, nar?26:44);
+  var iw = plotW/d.length, bw = Math.min(iw*0.58, nar?26:46);
   d.forEach(function(r,idx){
     var cx = PL + iw*idx + iw/2;
-    var h = (r.fyp/top)*plotH;
-    s.appendChild(node('rect',{
-      x: cx-bw/2, y: PT+plotH-h, width: bw, height: Math.max(h,0.6),
-      rx: 3, fill:'#2f5d8a', opacity: r.ym==='2026-09'?0.55:1
-    }));
-    s.appendChild(node('title',{}, r.ym+'　FYP '+fmt(r.fyp)+'　FYC '+fmt(r.fyc)+'　個案 '+r.case));
-    var skip = nar && (idx%2!==0);
-    if(!skip){
-      var lab = r.ym.slice(2).replace('-','/');
-      s.appendChild(node('text',{x:cx,y:H-PB+20,'text-anchor':'middle','class':'tick'}, lab));
-    }
+    var h = (r.fyc/top)*plotH;
+    var reached = r.fyc >= pace;
+    s.appendChild(node('rect',{x:cx-bw/2,y:PT+plotH-h,width:bw,height:Math.max(h,0.6),rx:3,
+      fill: r.ym==='2026-09' ? '#9db4cc' : (reached ? '#0e7c66' : '#2f5d8a')}));
+    s.appendChild(node('title',{}, r.ym+'　FYC '+fmt(r.fyc)+'　目標 '+fmt(pace)));
+    if(!(nar && idx%2!==0))
+      s.appendChild(node('text',{x:cx,y:H-PB+20,'text-anchor':'middle','class':'tick'}, r.ym.slice(5)+'月'));
   });
-  // FYC line
-  var pts = d.map(function(r,idx){
-    var cx = PL + iw*idx + iw/2;
-    var y = PT + plotH - (r.fyc/top)*plotH;
-    return [cx,y];
-  });
-  s.appendChild(node('polyline',{
-    points: pts.map(function(p){return p[0]+','+p[1];}).join(' '),
-    fill:'none', stroke:'#b8860b', 'stroke-width':2.5, 'stroke-linejoin':'round'
-  }));
-  pts.forEach(function(p,idx){
-    s.appendChild(node('circle',{cx:p[0],cy:p[1],r:3.4,fill:'#fff',stroke:'#b8860b','stroke-width':2}));
-  });
+  var yp = PT + plotH - (pace/top)*plotH;
+  s.appendChild(node('line',{x1:PL,y1:yp,x2:W-PR,y2:yp,stroke:'#B3123F','stroke-width':2,'class':'dash'}));
+  s.appendChild(node('text',{x:W-PR,y:yp-6,'text-anchor':'end',fill:'#B3123F','font-size':11,'font-weight':700}, '目標 '+fmt(pace)));
   box.appendChild(s);
-
-  // table
-  var t = el('t-trend');
-  var head = '<thead><tr><th>月份</th><th>FYP (HKD)</th><th>FYC (HKD)</th><th>已交付個案</th></tr></thead><tbody>';
-  var body = '';
-  DATA.monthly.forEach(function(r){
-    body += '<tr><td>'+r.ym+'</td><td class="num">'+fmt(r.fyp)+'</td><td class="num">'+fmt(r.fyc)+'</td><td class="num">'+r.case+'</td></tr>';
-  });
-  body += '<tr class="tot"><td>12 個月合計</td><td class="num">3,481,751</td><td class="num">849,318</td><td class="num">138</td></tr>';
-  t.innerHTML = head + body + '</tbody>';
 }
 
-/* ============================================================
-   CHART 2 — per-agent horizontal grouped bars
-   ============================================================ */
+function drawCumulative(){
+  var box = el('c-cum'); box.innerHTML='';
+  var d = DATA.monthly, pace = TARGET/12;
+  var nar = isNarrow();
+  var W = nar?430:900, H = nar?300:330, PL = nar?48:64, PR = nar?42:70, PT = 18, PB = nar?42:46;
+  var plotW = W-PL-PR, plotH = H-PT-PB;
+  var top = niceTop(pace*d.length, 200000);
+  var s = svg(W,H);
+  for(var i=0;i<=4;i++){
+    var y = PT + plotH - plotH*i/4;
+    s.appendChild(node('line',{x1:PL,y1:y,x2:W-PR,y2:y,'class':i===0?'axis':'gl'}));
+    s.appendChild(node('text',{x:PL-8,y:y+4,'text-anchor':'end','class':'tick'}, Math.round(top*i/4/1000)+'k'));
+  }
+  var iw = plotW/d.length, cum = 0;
+  var pts = d.map(function(r,idx){
+    cum += r.fyc;
+    return {x: PL + iw*idx + iw/2, y: PT+plotH-(cum/top)*plotH, cum:cum};
+  });
+  var ppts = d.map(function(r,idx){
+    return [PL + iw*idx + iw/2, PT+plotH-((pace*(idx+1))/top)*plotH];
+  });
+  s.appendChild(node('polyline',{points:ppts.map(function(p){return p[0]+','+p[1];}).join(' '),
+    fill:'none',stroke:'#B3123F','stroke-width':2,'class':'dash'}));
+  s.appendChild(node('polyline',{points:pts.map(function(p){return p.x+','+p.y;}).join(' '),
+    fill:'none',stroke:'#0e7c66','stroke-width':2.5,'stroke-linejoin':'round'}));
+  pts.forEach(function(p,idx){
+    s.appendChild(node('circle',{cx:p.x,cy:p.y,r:3.4,fill:'#fff',stroke:'#0e7c66','stroke-width':2}));
+    if(!(nar && idx%2!==0))
+      s.appendChild(node('text',{x:p.x,y:H-PB+20,'text-anchor':'middle','class':'tick'}, d[idx].ym.slice(5)+'月'));
+  });
+  var last = pts[pts.length-1];
+  s.appendChild(node('text',{x:last.x,y:last.y-10,'text-anchor':'middle','class':'barlab'}, fmt(last.cum)));
+  s.appendChild(node('text',{x:W-PR+4,y:ppts[ppts.length-1][1]+4,fill:'#B3123F','font-size':10.5}, '目標'));
+  box.appendChild(s);
+}
+
 function drawAgents(){
-  var box = el('c-agents'); box.innerHTML = '';
+  var box = el('c-agents'); box.innerHTML='';
   var d = DATA.agents.slice().sort(function(a,b){return b.ytd-a.ytd;});
   var nar = isNarrow();
-  var W = nar?430:900, rowH = nar?88:84, PT = 8, PB = 8, PL = 8, PR = nar?70:96;
-  var H = PT + PB + rowH*d.length;
-  var plotW = W-PL-PR;
+  var W = nar?430:900, rowH = nar?88:84, PT = 8, PB = 8, PL = 8, PR = nar?76:100;
+  var H = PT + PB + rowH*d.length, plotW = W-PL-PR;
   var max = Math.max.apply(null, d.map(function(r){return Math.max(r.ly,r.ytd);}));
-  var top = Math.ceil(max/500000)*500000;
+  var top = niceTop(max, 200000);
   var s = svg(W,H);
-
   d.forEach(function(r,idx){
-    var y0 = PT + rowH*idx + 14;
-    var bh = 20;
+    var y0 = PT + rowH*idx + 14, bh = 20;
     s.appendChild(node('text',{x:PL,y:y0-2,'class':'rowlab'}, r.name));
     s.appendChild(node('text',{x:PL,y:y0+13,'class':'rowlab2'}, r.code));
-    // LY bar
     var w1 = (r.ly/top)*plotW;
     s.appendChild(node('rect',{x:PL,y:y0+20,width:Math.max(w1,0.6),height:bh,rx:3,fill:'#d9dde4'}));
     s.appendChild(node('text',{x:PL+Math.max(w1,0)+6,y:y0+35,'class':'barlab'}, '去年 '+fmt(r.ly)));
-    // YTD bar
     var w2 = (r.ytd/top)*plotW;
     s.appendChild(node('rect',{x:PL,y:y0+20+bh+5,width:Math.max(w2,0.6),height:bh,rx:3,fill:'#B3123F'}));
     s.appendChild(node('text',{x:PL+Math.max(w2,0)+6,y:y0+20+bh+20,'class':'barlab'}, '本年 '+fmt(r.ytd)));
-    // growth chip
-    var gx = W-PR+6;
     var gcol = r.g===null?'#7a8290':(r.g>0?'#0e7c66':'#c0392b');
-    s.appendChild(node('text',{x:gx,y:y0+36,fill:gcol,'font-size':13,'font-weight':700}, r.g===null?'新成員':(arrow(r.g)+pct(r.g))));
-    s.appendChild(node('text',{x:gx,y:y0+54,'class':'rowlab2'}, '佔 '+r.share+'%'));
+    s.appendChild(node('text',{x:W-PR+6,y:y0+36,fill:gcol,'font-size':13,'font-weight':700}, r.g===null?'新成員':(arrow(r.g)+pct(r.g))));
+    s.appendChild(node('text',{x:W-PR+6,y:y0+54,'class':'rowlab2'}, '佔 '+r.share.toFixed(2)+'%'));
     s.appendChild(node('line',{x1:PL,y1:y0+rowH-6,x2:W-PR,y2:y0+rowH-6,'class':'gl'}));
   });
   box.appendChild(s);
 
-  // table
   var t = el('t-agents');
-  var head = '<thead><tr><th>組員</th><th>姓名</th><th>去年同期</th><th>本年累計</th><th>增長</th><th>佔組別</th><th>個案<br><span style="font-weight:400;color:#8b93a1">壽險＋PA</span></th><th>回款率</th></tr></thead><tbody>';
+  var head = '<thead><tr><th>組員</th><th>姓名</th><th>去年同期</th><th>本年累計</th><th>增長</th><th>佔組別</th><th>本月</th><th>回款率</th></tr></thead><tbody>';
   var body = '';
   DATA.agents.forEach(function(r){
     var tag = r.g===null ? '<span class="tag b">新成員</span>'
       : (r.g>0 ? '<span class="tag g">▲ '+pct(r.g)+'</span>' : '<span class="tag r">▼ '+pct(Math.abs(r.g))+'</span>');
     body += '<tr><td>'+r.code+'</td><td>'+r.name+'</td><td class="num">'+fmt(r.ly)+'</td><td class="num">'+fmt(r.ytd)+
-            '</td><td>'+tag+'</td><td class="num">'+r.share+'%</td><td class="num">'+r.cases+
+            '</td><td>'+tag+'</td><td class="num">'+r.share.toFixed(2)+'%</td><td class="num">'+fmt(r.mtd)+
             '</td><td class="num">'+pct(r.paid)+'</td></tr>';
   });
-  var a = DATA.agentsTotal;
+  var a = DATA.total;
   body += '<tr class="tot"><td>合計</td><td>組別</td><td class="num">'+fmt(a.ly)+'</td><td class="num">'+fmt(a.ytd)+
-          '</td><td><span class="tag r">▼ '+pct(Math.abs(a.g))+'</span></td><td class="num">100%</td><td class="num">'+
-          a.cases+'</td><td class="num">'+pct(a.paid)+'</td></tr>';
+          '</td><td><span class="tag r">▼ '+pct(Math.abs(a.g))+'</span></td><td class="num">100.00%</td><td class="num">'+
+          fmt(a.mtd)+'</td><td class="num">'+pct(a.paid)+'</td></tr>';
   t.innerHTML = head + body + '</tbody>';
 }
 
-/* ============================================================
-   CHART 3 — persistency horizontal bars (2 series)
-   ============================================================ */
-function drawHBar(containerId, rows, series, opts){
-  var box = el(containerId); box.innerHTML = '';
-  opts = opts || {};
-  var nar = isNarrow();
-  var W = nar?430:900, rowH = opts.rowH || 62, PT = 8, PL = nar?4:8;
-  var H = PT + 10 + rowH*rows.length + 14;
-  var PR = nar?56:74, plotW = W-PL-PR;
-  var s = svg(W,H);
-  // 100% scale
-  var max = opts.max || 100;
+function drawLines(){
+  var t = el('t-lines');
+  var head = '<thead><tr><th>業務線</th><th>去年同期</th><th>本年累計</th><th>增長</th><th>佔 FYC 總額</th></tr></thead><tbody>';
+  var body = '';
+  DATA.lines.forEach(function(r){
+    var tag = r.g>0 ? '<span class="tag g">▲ '+pct(r.g)+'</span>' : '<span class="tag r">▼ '+pct(Math.abs(r.g))+'</span>';
+    body += '<tr'+(r.isTotal?' class="tot"':'')+'><td>'+r.name+'</td><td class="num">'+fmt(r.ly)+'</td><td class="num">'+
+            fmt(r.ytd)+'</td><td>'+tag+'</td><td class="num">'+(r.ytd/657944*100).toFixed(2)+'%</td></tr>';
+  });
+  t.innerHTML = head + body + '</tbody>';
+}
 
-  // guide lines at 50 / 100
+function drawHBar(id, rows, series, opts){
+  var box = el(id); box.innerHTML='';
+  opts = opts||{};
+  var nar = isNarrow();
+  var W = nar?430:900, rowH = opts.rowH||62, PT = 8, PL = nar?4:8;
+  var H = PT + 10 + rowH*rows.length + 14;
+  var PR = nar?58:74, plotW = W-PL-PR;
+  var s = svg(W,H), max = opts.max||100;
   [50,100].forEach(function(g){
     var x = PL + plotW*(g/max);
     s.appendChild(node('line',{x1:x,y1:PT+6,x2:x,y2:H-12,'class':'gl'}));
     s.appendChild(node('text',{x:x,y:H-2,'text-anchor':'middle','class':'tick'}, g+'%'));
   });
-
   rows.forEach(function(r,idx){
     var y0 = PT + 16 + rowH*idx;
     s.appendChild(node('text',{x:PL,y:y0,'class':'rowlab'}, r.label));
@@ -549,22 +551,14 @@ function drawHBar(containerId, rows, series, opts){
 }
 
 function drawQuality(){
-  var rows = DATA.agents.map(function(r){
-    return {label:r.name+'　'+r.code, vals:[r.p12, r.cm]};
-  });
-  rows.push({label:'組別合計', vals:[DATA.agentsTotal.p12, DATA.agentsTotal.cm]});
-  drawHBar('c-persist', rows, [
-    {name:'P12m', color:'#0e7c66'},
-    {name:'CM',   color:'#b8860b'}
-  ], {warnBelow:90});
+  var rows = DATA.agents.map(function(r){ return {label:r.name+'　'+r.code, vals:[r.p12, r.cm]}; });
+  rows.push({label:'組別合計', vals:[DATA.total.p12, DATA.total.cm]});
+  drawHBar('c-persist', rows, [{color:'#0e7c66'},{color:'#b8860b'}], {warnBelow:90});
 
-  var rows2 = DATA.agents.map(function(r){
-    return {label:r.name+'　'+r.code, vals:[r.paid]};
-  });
-  rows2.push({label:'組別合計', vals:[DATA.agentsTotal.paid]});
-  drawHBar('c-collect', rows2, [{name:'回款率', color:'#2f5d8a'}], {rowH:46, warnBelow:80});
+  var rows2 = DATA.agents.map(function(r){ return {label:r.name+'　'+r.code, vals:[r.paid]}; });
+  rows2.push({label:'組別合計', vals:[DATA.total.paid]});
+  drawHBar('c-collect', rows2, [{color:'#2f5d8a'}], {rowH:46, warnBelow:80});
 
-  // quality table
   var t = el('t-quality');
   var head = '<thead><tr><th>組員</th><th>姓名</th><th>持續率 P12m</th><th>持續率 CM</th><th>回款率</th><th>保單數（本年）</th><th>保單數（去年）</th></tr></thead><tbody>';
   var body = '';
@@ -574,21 +568,54 @@ function drawQuality(){
     body += '<tr><td>'+r.code+'</td><td>'+r.name+'</td><td class="num">'+r.p12.toFixed(2)+'%</td><td class="num">'+
             cmTag+'</td><td class="num">'+paidTag+'</td><td class="num">'+r.riders+'</td><td class="num">'+r.ridersLy+'</td></tr>';
   });
-  var a = DATA.agentsTotal;
+  var a = DATA.total;
   body += '<tr class="tot"><td>合計</td><td>組別</td><td class="num">'+a.p12.toFixed(2)+'%</td><td class="num">'+
-          a.cm.toFixed(2)+'%</td><td class="num">'+a.paid.toFixed(2)+'%</td><td class="num">'+
-          a.riders+'</td><td class="num">98</td></tr>';
+          a.cm.toFixed(2)+'%</td><td class="num">'+a.paid.toFixed(2)+'%</td><td class="num">'+a.riders+'</td><td class="num">98</td></tr>';
   t.innerHTML = head + body + '</tbody>';
 }
 
-/* ============================================================
-   ACTIONS TABLE
-   ============================================================ */
+function drawScen(){
+  var t = el('t-scen');
+  var best3 = 362807, best1 = 158151;
+  var scen = [
+    {n:'A｜維持現時節奏（月均 73,105）', r:73105*3, cls:''},
+    {n:'B｜重複今年最佳 3 個月（112K＋158K＋94K）', r:best3, cls:''},
+    {n:'C｜每月都做到歷史最佳（158,151 × 3）', r:best1*3, cls:''},
+    {n:'D｜達標所需（月均 240,685 × 3）', r:722056, cls:'tot'}
+  ];
+  var head = '<thead><tr><th>情境</th><th>餘下 3 個月 FYC</th><th>年底累計</th><th>達標率</th></tr></thead><tbody>';
+  var body = '';
+  scen.forEach(function(s){
+    var end = 657944 + s.r;
+    body += '<tr class="'+s.cls+'"><td style="white-space:normal">'+s.n+'</td><td class="num">'+fmt(s.r)+
+            '</td><td class="num">'+fmt(end)+'</td><td class="num">'+(end/TARGET*100).toFixed(1)+'%</td></tr>';
+  });
+  t.innerHTML = head + body + '</tbody>';
+}
+
+function drawMonthlyTable(){
+  var t = el('t-monthly');
+  var pace = TARGET/12, cum=0;
+  var head = '<thead><tr><th>月份</th><th>當月 FYC</th><th>目標月均</th><th>達成</th><th>累計 FYC</th><th>累計目標</th><th>累計缺口</th></tr></thead><tbody>';
+  var body='';
+  DATA.monthly.forEach(function(r,idx){
+    cum += r.fyc;
+    var cumT = pace*(idx+1);
+    var ok = r.fyc>=pace;
+    body += '<tr><td>'+r.ym+'</td><td class="num">'+fmt(r.fyc)+'</td><td class="num">'+fmt(pace)+
+            '</td><td>'+(ok?'<span class="tag g">達標</span>':'<span class="tag r">'+Math.round(r.fyc/pace*100)+'%</span>')+
+            '</td><td class="num">'+fmt(cum)+'</td><td class="num">'+fmt(cumT)+
+            '</td><td class="num down">'+fmt(cum-cumT)+'</td></tr>';
+  });
+  body += '<tr class="tot"><td>合計</td><td class="num">645,980</td><td class="num">1,035,000</td><td>—</td><td class="num">645,980</td><td class="num">1,035,000</td><td class="num down">-389,020</td></tr>';
+  t.innerHTML = head + body + '</tbody>';
+}
+
 function drawActions(){
   var t = el('t-actions');
   var map = {'高':'r','中':'y','低':'b'};
   var head = '<thead><tr><th>優先</th><th>行動</th><th>對象</th></tr></thead><tbody>';
-  var body = '';
+  var body='';
   DATA.actions.forEach(function(r){
     body += '<tr><td><span class="tag '+map[r[0]]+'">'+r[0]+'</span></td><td style="text-align:left;white-space:normal">'+
             r[1]+'</td><td style="text-align:left">'+r[2]+'</td></tr>';
@@ -596,18 +623,13 @@ function drawActions(){
   t.innerHTML = head + body + '</tbody>';
 }
 
-/* ============================================================
-   INIT
-   ============================================================ */
 function renderAll(){
-  drawTrend(); drawAgents(); drawQuality(); drawActions();
+  drawMonthly(); drawCumulative(); drawAgents();
+  drawLines(); drawQuality(); drawScen(); drawMonthlyTable(); drawActions();
 }
 renderAll();
 var rt;
-window.addEventListener('resize', function(){
-  clearTimeout(rt);
-  rt = setTimeout(renderAll, 220);
-});
+window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(renderAll,220); });
 </script>
 </body>
 </html>
